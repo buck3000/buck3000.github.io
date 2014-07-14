@@ -15,7 +15,7 @@ To correct / fight the file permissions monster you must first see what you're u
 
 Now you're going to get a bunch of output (or just one line if you listed a specific file after ls -l) that looks like this:
 
--rw-r--r-- 1 root root 2453 Jul 17 16:25 File.txt (pretend this is the name of one specfic file i ls-l-ed.)
+##### -rw-r--r-- 1 root root 2453 Jul 17 16:25 File.txt (pretend this is the name of one specfic file i ls-l-ed.)
 
 If you're a beginner, the odds are you're looking at that and thinking "wtf?!" or "I'm going to go watch the critically acclaimed indie action movie Snowpiercer instead of this." Don't. Or wait, maybe eventually watch Snowpiercer because it rules. But not now. We're going to decode this:
 
@@ -30,31 +30,31 @@ So now you know what all this shit is. What do you do about it?
 
 While often if you're working on your own machine you want to own your own files. There are two main commands that change permissions though and we'll go over both of them:
 
-chmod - change permissions
+##### chmod - change permissions
 
-chown - change ownership
+##### chown - change ownership
 
 So depending on your status as a user you may have to use sudo here (try not to though.) If you want to own the file we discussed earlier the syntax is:
 
-chown BUCK (or whatever your username is) PATH-TO_FILE/FILENAME (just put in whatever you imagined eariler...)
+##### chown BUCK (or whatever your username is) PATH-TO_FILE/FILENAME (just put in whatever you imagined eariler...)
 
 If you want to change the owner for a whole directory (and its contents 'recursively') the command has to have a -R so: 
 
-sudo chown -R BUCK /CRAZY-FOLDER
+##### sudo chown -R BUCK /CRAZY-FOLDER
 
 If you already own it and want to change the permissions you can do a few different things and your syntax looks like this:
 
-chmod ugo+rwx file.txt (or whateva) 
+##### chmod ugo+rwx file.txt (or whateva) 
 
 That command means any user, group, other can read, write and execute. You can also with a quick google search you can find octal notation and do this numerically. Analagous syntax for the above item would be:
 
-chmod 777 file.text
+##### chmod 777 file.text
 
 Generally, when you're editing permissions (at least for me personally) you want to own and be able to read / write and execute -- the octal syntax for that is:
 
-chmod 755 file.txt
+##### chmod 755 file.txt
 
 That makes it readable and executable by everyone and writable only by the owner (which generally is me.)
 
-That's what I know about file permissions. Hopefully it was helpful. If not please send an email to my secretary at traviswbrimm@gmail.com .
+That's what I know about file permissions. Hopefully it was helpful. If not please send an email to my secretary at <a href="traviswbrimm@gmail.com">traviswbrimm@gmail.com</a>.
 
