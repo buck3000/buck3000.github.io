@@ -15,7 +15,7 @@ To correct / fight the file permissions monster you must first see what you're u
 
 Now you're going to get a bunch of output (or just one line if you listed a specific file after ls -l) that looks like this:
 
--rw-r--r-- 1 root root 2453 Jul 17 16:25 (pretend this is the name of one specfic file i ls-l-ed.)
+-rw-r--r-- 1 root root 2453 Jul 17 16:25 File.txt (pretend this is the name of one specfic file i ls-l-ed.)
 
 If you're a beginner, the odds are you're looking at that and thinking "wtf?!" or "I'm going to go watch the critically acclaimed indie action movie Snowpiercer instead of this." Don't. Or wait, maybe eventually watch Snowpiercer because it rules. But not now. We're going to decode this:
 
