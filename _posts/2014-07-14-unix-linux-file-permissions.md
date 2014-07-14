@@ -31,6 +31,7 @@ So now you know what all this shit is. What do you do about it?
 While often if you're working on your own machine you want to own your own files. There are two main commands that change permissions though and we'll go over both of them:
 
 chmod - change permissions
+
 chown - change ownership
 
 So depending on your status as a user you may have to use sudo here (try not to though.) If you want to own the file we discussed earlier the syntax is:
