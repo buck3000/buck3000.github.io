@@ -39,7 +39,7 @@ chown BUCK (or whatever your username is) PATH-TO_FILE/FILENAME (just put in wha
 
 If you want to change the owner for a whole directory (and its contents 'recursively') the command has to have a -R so: 
 
-sudo chown -R bethany /CRAZY-FOLDER
+sudo chown -R BUCK /CRAZY-FOLDER
 
 If you already own it and want to change the permissions you can do a few different things and your syntax looks like this:
 
