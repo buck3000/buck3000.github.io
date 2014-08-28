@@ -19,19 +19,19 @@ This gave me a new array of each last_match via RegExp's last_match class method
 
 ### Instance methods:
 -----
-###### hypothetical_match_data_object.captures 
+hypothetical_match_data_object.captures 
 => Gives you the actual matched string -- so in this case "verb" or "noun" -- if you have one match it's also stored in the global variable $+
 -----
-##### hypothetical_match_data_object.begin(0)
+hypothetical_match_data_object.begin(0)
 => Gives you the starting position of the first character in the matched string. The argument allows you to offset that by a character. No idea why, but if you want to you can. When used with insert (which can take character position as an initial argument) you can do some nifty stuff here.
 -----
-##### hypothetical_match_data_object.to_s
+hypothetical_match_data_object.to_s
 => Gives you the full match so in this case "{verb}" or "{noun}" -- if you have one match it's also stored in the global variable $&
 -----
-##### hypothetical_match_data_object.end(0)
+hypothetical_match_data_object.end(0)
 => Gives the position of the last character in the matched string. Once again, the argument allows you to offset that by a character. No idea why, but if you want to knock yourself out. 
 -----
-### Other potentially useful Matchdata global variables / instance methods: 
+Other potentially useful Matchdata global variables / instance methods: 
 -----
 $` => Gives you the full string prior to match. #pre_match does the same thing as an instance method.
 -----
