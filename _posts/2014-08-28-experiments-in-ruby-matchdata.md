@@ -13,7 +13,7 @@ So this was an interesting new issue -- I've never had to match and replace that
 
 The first step wasn't so tough after a bit of creative google-ing -- I built an enumerator to catch all the matchdata in an array. Like so: 
 
-### original_text.to_enum(:scan, /\d+/).map { Regexp.last_match }
+##### original_text.to_enum(:scan, /\d+/).map { Regexp.last_match }
 
 This gave me a new array of each last_match via RegExp's last_match class method (obvi) and my old friend #scan. Once you have that data there are a ton of built in match variables and methods to make your life easier which we're going to go over now:
 
