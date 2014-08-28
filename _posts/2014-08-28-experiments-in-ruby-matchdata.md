@@ -31,8 +31,13 @@ hypothetical_match_data_object.to_s
 hypothetical_match_data_object.end(0)
 => Gives the position of the last character in the matched string. Once again, the argument allows you to offset that by a character. No idea why, but if you want to knock yourself out. 
 
-Other potentially useful Matchdata global variables: 
-$` => Gives you the full string prior to match.
-$' => Gives you the full string after the match.
-$1 - $9 => Gives you the content of previous successful pattern matches. 
+Other potentially useful Matchdata global variables / instance methods: 
+
+$` => Gives you the full string prior to match. #pre_match does the same thing as an instance method.
+
+$' => Gives you the full string after the match. #post_match does the same thing as an instance method. 
+
+$1 - $9 => Gives you the content of previous successful pattern matches.
+
+Preeeeety kewl. 
 
