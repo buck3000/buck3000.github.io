@@ -15,7 +15,7 @@ The first step wasn't so tough after a bit of creative google-ing -- I built an 
 
 #### original_text.to_enum(:scan, /\{(.*?)\}/).map { Regexp.last_match }
 
-This gave me a new array of each last_match via RegExp's last_match class method (obvi) via my old friend #scan. Once you have that data there are a ton of built in match variables and methods to make your life easier which we're going to go over now:
+This gave me a new array of each last_match via RegExp's last_match class method (obvi) viag my old friend #scan. Once you have that data there are a ton of built in match variables and methods to make your life easier which we're going to go over now:
 
 #### Instance methods:
 
@@ -37,7 +37,7 @@ This gave me a new array of each last_match via RegExp's last_match class method
 
 ##### $' => Gives you the full string after the match. #post_match does the same thing as an instance method. 
 
-##### $1 - $9 => Gives you the content of previous successful pattern matches.
+##### $1 - $9 => Gives you the content of numerous successful pattern matches.
 
 
 Preeeeety kewl, eh? 
