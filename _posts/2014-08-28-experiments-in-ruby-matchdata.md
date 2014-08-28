@@ -13,11 +13,11 @@ So this was an interesting new issue -- I've never had to match and replace that
 
 The first step wasn't so tough after a bit of creative google-ing -- I built an enumerator to catch all the matchdata in an array. Like so: 
 
-#### original_text.to_enum(:scan, /\d+/).map { Regexp.last_match }
+#### original_text.to_enum(:scan, /\{(.*?)\}/).map { Regexp.last_match }
 
 This gave me a new array of each last_match via RegExp's last_match class method (obvi) and my old friend #scan. Once you have that data there are a ton of built in match variables and methods to make your life easier which we're going to go over now:
 
-### Instance methods:
+#### Instance methods:
 
 ##### hypothetical_match_data_object.captures 
 => Gives you the actual matched string -- so in this case "verb" or "noun" -- if you have one match it's also stored in the global variable $+
@@ -31,7 +31,7 @@ This gave me a new array of each last_match via RegExp's last_match class method
 ##### hypothetical_match_data_object.end(0)
 => Gives the position of the last character in the matched string. Once again, the argument allows you to offset that by a character. No idea why, but if you want to knock yourself out. 
 
-Other potentially useful Matchdata global variables / instance methods: 
+#### Other potentially useful Matchdata global variables / instance methods: 
 
 ##### $` => Gives you the full string prior to match. #pre_match does the same thing as an instance method.
 
