@@ -20,9 +20,9 @@ Now you're going to get a bunch of output (or just one line if you listed a spec
 If you're a beginner, the odds are you're looking at that and thinking "wtf?!" or "I'm going to go watch the critically acclaimed indie action movie Snowpiercer instead of this." Don't. Or wait, maybe eventually watch Snowpiercer because it rules. But not now. We're going to decode this:
 
 The first character in this output denotes the file type: - means regular file, d means directory.
-The next three characters (in this case rw-) tell you what the permissions are for the user who owns the file. r is read, w is write and x is execute. - is the absence of a permission (Bummer, dude). The next three characters are the permissions for the group that owns that file. The last three are the permissions for every user / sucka that uses your computer.
+The next three characters (in this case rw-) tell you what the permissions are for the user who owns the file. ##### r is read, w is write and x is execute. - is the absence of a permission (Bummer, dude). The next three characters are the permissions for the group that owns that file. The last three are the permissions for every user / sucka that uses your computer.
 
-Oh also -- g means group, u means user and o means other (as in any other person can do whatever the permissions for o specify to your file. Not good peeps.)
+##### Oh also -- g means group, u means user and o means other (as in any other person can do whatever the permissions for o specify to your file. Not good peeps.)
 
 The first word following all that is the user who owns whatever is going on (often root or your username). The word after that is the group that has permissions regarding the file. Often this is admin or wheel. Wheel generally refers to the super user group (or su, as in sudo) which is why you have to sudo all the time if you have no f-ing idea what you're doing. 
 
