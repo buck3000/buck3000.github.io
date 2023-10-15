@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Buck Makes Internet
-tagline: not including this internet...
+tagline:
 ---
 {% include JB/setup %}
 
